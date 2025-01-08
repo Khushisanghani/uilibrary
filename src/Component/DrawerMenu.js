@@ -1,9 +1,13 @@
 import { Alert, Button, Drawer, List, ListItemButton, ListItemText, Snackbar } from "@mui/material";
 import { useState } from "react";
+import Welcome from "../State/Welcome";
 
 function DrawerMenu(){
     const [open,setOpen] = useState(false);
-    
+    // state = {
+    // open = false
+    //  }
+    // 
     const courses = ['React JS','Node JS','MongoDB','JavaScript','Magento']
     return(
         <>
@@ -24,6 +28,11 @@ function DrawerMenu(){
         <Snackbar open='true' autoHideDuration={2000}>
             <Alert severity="success">This is alert in Snackbar</Alert>
         </Snackbar>
+        <br/> <br/> <br/> <br/> <br/>
+        <div>
+                <Welcome name="Welcome to react js project" />
+        </div>
+        <br/> <br/> <br/> <br/> <br/>
         </>
     )
 }
